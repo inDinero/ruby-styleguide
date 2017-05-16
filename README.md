@@ -279,3 +279,86 @@
       chained_method(arg).
       foo_bar(baz)
   ```
+
+## Modules and Classes
+
+- No empty lines around body.
+  ```ruby
+  module Something
+    class MyClass
+      MY_CONSTANT = 1
+      OTHER_CONSTANT = 2
+
+      def foo
+        #
+        # do something
+        #
+      end
+
+      def bar
+        #
+        # do something
+        #
+      end
+    end
+  end
+  ```
+
+- Align visibility modifiers with methods.
+  ```ruby
+  class MyClass
+    def my_public_method
+      # do something
+    end
+
+    private
+
+    def my_helper_method
+      # do something
+    end
+  end
+  ```
+  
+- Avoid using `self` inside methods.
+  ```ruby
+  #
+  # Bad
+  #
+  class MyClass
+    def foo(x)
+      self.x + y + z * x
+    end
+  end
+  
+  #
+  # Good
+  #
+  class MyClass
+    def foo(other_x)
+      x + y + z * other_x
+    end
+  end
+  ```
+
+- Class method definition:
+  ```ruby
+  #
+  # Bad
+  #
+  class Foo
+    class << self
+      def my_method
+        # do something
+      end
+    end
+  end
+  
+  #
+  # Good
+  #
+  class Foo
+    def self.my_method
+      # do something
+    end
+  end
+  ```
