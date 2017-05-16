@@ -37,6 +37,19 @@
   str << ' World'
   ```
   
+## Hash
+
+- Always use colon-syntax rather than hash-rockets *(except for non-symbol keys)*.
+  ```ruby
+  mixed_hash = {foo: 'Foo', baz: :baz, 1 => 'One', 'Bar' => 'Bar Bar'}
+  ```
+  
+- Spaces around contents.
+  ```ruby
+  { x: 1, y: 2, z: 3 }
+  { 'foo' => 1, 'bar' => 2 }
+  ```
+  
 ## Blocks
 
 - Spaces around block content.
