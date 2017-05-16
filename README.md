@@ -22,7 +22,21 @@
   {x: 1, y: 2}
   class FooError < StandardError; end
   ```
+  
+## Strings
 
+- Always use single-quote `'`, unless when interpolation is needed.
+- Use `<<` when concatenation strings.
+  ```ruby
+  # Bad
+  str = 'Hello'
+  str += ' World'
+
+  # Good
+  str = 'Hello'
+  str << ' World'
+  ```
+  
 ## Blocks
 
 - Spaces around block content.
