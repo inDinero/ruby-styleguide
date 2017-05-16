@@ -157,3 +157,49 @@
     #
   end
   ```
+
+## Methods
+
+- Parentheses around method definition arguments.
+  ```ruby
+  def foo(arg1, arg2, arg3)
+    # do something
+  end
+  ```
+  
+- Parentheses around method call arguments.
+  ```ruby
+  foo(1, 2, 3)
+  bar('Hello')
+  ```
+  
+- Hash arguments format:
+  ```ruby
+  object.update(
+    prop1: 'Value 01',
+    prop2: 'Value 02',
+    prop3: 'Value 03',
+    prop4: 'Value 04'
+  )
+  ```
+  
+- Array arguments format:
+  ```ruby
+  #
+  # Continue up to line-length limit.
+  #
+  object.add([
+    'jack of diamonds', 'two of spades', 'ten of clubs', 'seven of diamonds',
+    'king of hearts', 'ace of hearts', 'nine of spades', 'four of diamonds',
+    'joker', 'three of clubs', 'joker'
+  ])
+  ```
+  
+- 1 method per line when chaining *(if exceeds line-length limit)*.
+  ```ruby
+  object.
+    foo.
+    bar(key: 'Bar!').
+    baz(:a, :b).
+    fizz(x: 1000, y: 2000, z: 3000)
+  ```
