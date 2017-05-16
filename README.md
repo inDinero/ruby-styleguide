@@ -230,3 +230,52 @@
     baz(:a, :b).
     fizz(x: 1000, y: 2000, z: 3000)
   ```
+
+## Assignment
+
+- Large Array.
+  ```ruby
+  #
+  # Continue up to line-length limit.
+  #
+  huge_array = [
+    ace, king, queen, jack, ten, nine, eight, seven, six, five, four,
+    three, two
+  ]
+  ```
+  
+- Large Hash.
+  ```ruby
+  my_big_hash = {
+    a: 'Ace of Spades',
+    b: 'Two of Spades',
+    c: 'Three of Spades',
+    d: 'Four of Spades',
+    e: 'Five of Spades',
+    f: 'Joker'
+  }
+  ```
+
+- Multi-line Block.
+  ```ruby
+  output =
+    if some_condition
+      # do something
+    else
+      # do another thing
+    end
+
+  result =
+    collection.map do |record|
+      # do something here
+    end
+  ```
+
+- Long method chain.
+  ```ruby
+  result =
+    my_super_long_variable_name.
+      long_public_method_name_something(argument).
+      chained_method(arg).
+      foo_bar(baz)
+  ```
