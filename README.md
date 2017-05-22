@@ -1,5 +1,11 @@
 # Indinero Ruby Styleguide
 
+## General
+
+- Use soft tabs (2 spaces).
+- Limit lines to 120 characters only.
+- Avoid trailing whitespaces.
+
 ## Operators
 
 - Spaces around binary operators, except on `**` *(exponent)*.
